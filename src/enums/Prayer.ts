@@ -10,6 +10,8 @@ import UltimateStrength from '@/public/img/prayers/Ultimate_Strength.png';
 import IncredibleReflexes from '@/public/img/prayers/Incredible_Reflexes.png';
 import EagleEye from '@/public/img/prayers/Eagle_Eye.png';
 import MysticMight from '@/public/img/prayers/Mystic_Might.png';
+import Deadeye from '@/public/img/prayers/Deadeye.png';
+import MysticVigour from '@/public/img/prayers/Mystic_Vigour.png';
 import Chivalry from '@/public/img/prayers/Chivalry.png';
 import Piety from '@/public/img/prayers/Piety.png';
 import Rigour from '@/public/img/prayers/Rigour.png';
@@ -40,6 +42,8 @@ export enum Prayer {
   INCREDIBLE_REFLEXES,
   EAGLE_EYE,
   MYSTIC_MIGHT,
+  DEADEYE,
+  MYSTIC_VIGOUR,
   CHIVALRY,
   PIETY,
   RIGOUR,
@@ -186,6 +190,22 @@ export const PrayerMap: { [k in Prayer]: PrayerData } = {
     magicDamageBonus: 20,
     factorAccuracy: [23, 20],
     factorDefenceMagic: [23, 20],
+  },
+  [Prayer.DEADEYE]: {
+    name: 'Deadeye',
+    image: Deadeye,
+    drainRate: 12,
+    combatStyle: 'ranged',
+    factorAccuracy: [59, 50],
+    factorDefence: [21, 20],
+  },
+  [Prayer.MYSTIC_VIGOUR]: {
+    name: 'Mystic Vigour',
+    image: MysticVigour,
+    drainRate: 12,
+    combatStyle: 'magic',
+    factorAccuracy: [59, 50],
+    factorDefenceMagic: [21, 20],
   },
   [Prayer.CHIVALRY]: {
     name: 'Chivalry',
