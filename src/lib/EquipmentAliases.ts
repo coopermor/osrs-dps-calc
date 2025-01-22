@@ -146,6 +146,9 @@ const equipmentAliases = {
   1187: [28059, 12418], // Dragon sq shield
   21009: [28029], // Dragon sword
   13576: [28035, 26710], // Dragon warhammer
+  30445: [30543, 30519, 30537, 30531, 30525], // Echo ahrim's hood#Undamaged
+  30449: [30547, 30523, 30541, 30535, 30529], // Echo ahrim's robeskirt#Undamaged
+  30447: [30545, 30521, 30539, 30533, 30527], // Echo ahrim's robetop#Undamaged
   29004: [29004, 29031], // Eclipse moon chestplate#New
   29010: [29010, 29035], // Eclipse moon helm#New
   29007: [29007, 29033], // Eclipse moon tassets#New
