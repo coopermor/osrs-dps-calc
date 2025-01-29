@@ -15,7 +15,7 @@ const equipmentAliases = {
   4708: [4860, 4856, 4859, 4858, 4857, 30445], // Ahrim's hood#Undamaged
   4714: [4878, 4874, 4877, 4876, 4875, 30449], // Ahrim's robeskirt#Undamaged
   4712: [4872, 4868, 4871, 4870, 4869, 30447], // Ahrim's robetop#Undamaged
-  4710: [4866, 4862, 4865, 4864, 4863], // Ahrim's staff#Undamaged
+  4710: [4866, 4862, 4865, 4864, 4863, 30568], // Ahrim's staff#Undamaged
   1729: [23309], // Amulet of defence
   6585: [12436], // Amulet of fury
   1704: [19707, 1706, 1708, 1710, 1712, 11976, 11978, 10360, 10358, 10356, 10354, 11966, 11964, 10362], // Amulet of glory#Uncharged
@@ -146,6 +146,10 @@ const equipmentAliases = {
   1187: [28059, 12418], // Dragon sq shield
   21009: [28029], // Dragon sword
   13576: [28035, 26710], // Dragon warhammer
+  30445: [30543, 30519, 30537, 30531, 30525], // Echo ahrim's hood#Undamaged
+  30449: [30547, 30523, 30541, 30535, 30529], // Echo ahrim's robeskirt#Undamaged
+  30447: [30545, 30521, 30539, 30533, 30527], // Echo ahrim's robetop#Undamaged
+  30568: [30574, 30570, 30573, 30572, 30571], // Echo ahrim's staff#Undamaged
   29004: [29004, 29031], // Eclipse moon chestplate#New
   29010: [29010, 29035], // Eclipse moon helm#New
   29007: [29007, 29033], // Eclipse moon tassets#New
