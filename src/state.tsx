@@ -37,7 +37,8 @@ import { availableEquipment, calculateEquipmentBonusesFromGear } from '@/lib/Equ
 import { CalcWorker } from '@/worker/CalcWorker';
 import { spellByName } from '@/types/Spell';
 import {
-  DEFAULT_ATTACK_SPEED, INFINITE_HEALTH_MONSTERS,
+  DEFAULT_ATTACK_SPEED,
+  INFINITE_HEALTH_MONSTERS,
   NUMBER_OF_LOADOUTS,
 } from '@/lib/constants';
 import { EquipmentCategory } from './enums/EquipmentCategory';
