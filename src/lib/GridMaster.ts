@@ -67,6 +67,7 @@ export const defaultGridMasterState = (): GridMasterState => ({
   melee: MeleeMastery.NONE,
   ranged: RangedMastery.NONE,
   magic: MagicMastery.NONE,
+  minimumPotential: false,
   ticksDelayed: 0,
   attackCount: 2, // average, -1 relative to ui so this is 3/5
 });

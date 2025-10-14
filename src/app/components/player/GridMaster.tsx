@@ -13,6 +13,10 @@ import NumberInput from '@/app/components/generic/NumberInput';
 import magic_2 from '@/public/img/gridmaster/magic_2.png';
 import minimum_potential from '@/public/img/gridmaster/minimum_potential.png';
 
+const Placeholder: React.FC = () => (
+  <div className="w-[40px] h-[40px] opacity-0" />
+);
+
 const MasteryButton: React.FC<MasteryUiData<MasteryStyle>> = observer((props) => {
   const {
     masteryStyle,
@@ -52,7 +56,7 @@ const MasteryButton: React.FC<MasteryUiData<MasteryStyle>> = observer((props) =>
   );
 });
 
-const MinimumPotentialButton: React.FC = observer(() => {
+const UnlocksRow: React.FC = observer(() => {
   const store = useStore();
   const { gridmaster } = store.player;
 
@@ -63,17 +67,25 @@ const MinimumPotentialButton: React.FC = observer(() => {
   };
 
   return (
-    <div className="flex justify-start w-60 m-auto mt-2">
+    <>
+      {}
       <GridItem
-        item={18} // or whatever index follows your mastery layout
+        item={18}
         name="Minimum Potential"
         image={minimum_potential}
         onClick={onClick}
-        active={gridmaster.minimumPotential}
+        active={Boolean(gridmaster?.minimumPotential)}
         width={40}
         height={40}
       />
-    </div>
+
+      {/* For scaling and future unlocks */}
+      <Placeholder />
+      <Placeholder />
+      <Placeholder />
+      <Placeholder />
+      <Placeholder />
+    </>
   );
 });
 
@@ -100,9 +112,8 @@ const GridMaster: React.FC = observer(() => {
         {MELEE_MASTERIES.map((r) => (<MasteryButton {...r} key={r.name} />))}
         {RANGED_MASTERIES.map((r) => (<MasteryButton {...r} key={r.name} />))}
         {MAGIC_MASTERIES.map((r) => (<MasteryButton {...r} key={r.name} />))}
+        <UnlocksRow />
       </div>
-
-      <MinimumPotentialButton />
 
       {data.magic >= 2 && (
         <div className="my-4">
