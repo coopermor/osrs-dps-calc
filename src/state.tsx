@@ -35,10 +35,8 @@ import { spellByName } from '@/types/Spell';
 import {
   DEFAULT_ATTACK_SPEED,
   INFINITE_HEALTH_MONSTERS,
-  MAD_ANGEL_IDS,
   NUMBER_OF_LOADOUTS,
 } from '@/lib/constants';
-import UserIssueType from '@/enums/UserIssueType';
 import { EquipmentCategory } from './enums/EquipmentCategory';
 import {
   ARM_PRAYERS,
