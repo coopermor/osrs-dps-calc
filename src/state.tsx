@@ -342,10 +342,6 @@ class GlobalState implements State {
   get userIssues() {
     let is: UserIssue[] = [];
 
-    if (MAD_ANGEL_IDS.includes(this.monster.id)) {
-      is.push({ type: UserIssueType.MONSTER_UNIQUE_EFFECTS, message: 'This monster is new and has potentially unknown mechanics. Results may be inaccurate.' });
-    }
-
     // Determine the current global/UI-related issues
     // ex. is.push({ type: UserIssueType.MONSTER_UNIQUE_EFFECTS, message: 'This monster has unique effects that are not yet accounted for. Results may be inaccurate.' });
     // Add in the issues returned from the calculator
